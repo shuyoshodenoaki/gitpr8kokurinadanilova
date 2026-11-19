@@ -1,6 +1,6 @@
 ﻿namespace ShoesApp
 {
-    partial class Form1
+    partial class task01
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            label1 = new Label();
+            Пароль = new Label();
+            button1 = new Button();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 14.25F);
+            label1.Location = new Point(41, 50);
+            label1.Name = "label1";
+            label1.Size = new Size(64, 24);
+            label1.TabIndex = 0;
+            label1.Text = "Логин";
+            // 
+            // Пароль
+            // 
+            Пароль.AutoSize = true;
+            Пароль.Font = new Font("Microsoft Sans Serif", 14.25F);
+            Пароль.Location = new Point(41, 118);
+            Пароль.Name = "Пароль";
+            Пароль.Size = new Size(76, 24);
+            Пароль.TabIndex = 1;
+            Пароль.Text = "Пароль";
+            Пароль.Click += label2_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.MediumSpringGreen;
+            button1.Location = new Point(41, 179);
+            button1.Name = "button1";
+            button1.Size = new Size(223, 31);
+            button1.TabIndex = 2;
+            button1.Text = "Войти";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(164, 55);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 20);
+            textBox1.TabIndex = 3;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(164, 122);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(100, 20);
+            textBox2.TabIndex = 4;
+            // 
+            // task01
+            // 
+            AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Text = "Form1";
+            ClientSize = new Size(686, 390);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(button1);
+            Controls.Add(Пароль);
+            Controls.Add(label1);
+            Font = new Font("Microsoft Sans Serif", 8.25F);
+            Name = "task01";
+            Text = "Форма авторизации";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private Label Пароль;
+        private Button button1;
+        private TextBox textBox1;
+        private TextBox textBox2;
     }
 }
