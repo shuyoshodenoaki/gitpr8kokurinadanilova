@@ -1,10 +1,15 @@
 namespace ShoesApp
 {
-    public partial class Form1 : Form
+    public partial class task01 : Form
     {
-        public Form1()
+        public task01()
         {
             InitializeComponent();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
