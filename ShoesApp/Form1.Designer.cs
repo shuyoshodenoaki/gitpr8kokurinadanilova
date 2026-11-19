@@ -30,6 +30,9 @@
         {
             label1 = new Label();
             Пароль = new Label();
+            button1 = new Button();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -53,11 +56,38 @@
             Пароль.Text = "Пароль";
             Пароль.Click += label2_Click;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.MediumSpringGreen;
+            button1.Location = new Point(41, 179);
+            button1.Name = "button1";
+            button1.Size = new Size(223, 31);
+            button1.TabIndex = 2;
+            button1.Text = "Войти";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(164, 55);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 20);
+            textBox1.TabIndex = 3;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(164, 122);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(100, 20);
+            textBox2.TabIndex = 4;
+            // 
             // task01
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(686, 390);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(button1);
             Controls.Add(Пароль);
             Controls.Add(label1);
             Font = new Font("Microsoft Sans Serif", 8.25F);
@@ -71,5 +101,8 @@
 
         private Label label1;
         private Label Пароль;
+        private Button button1;
+        private TextBox textBox1;
+        private TextBox textBox2;
     }
 }
