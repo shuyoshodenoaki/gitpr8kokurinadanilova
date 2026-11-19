@@ -59,7 +59,7 @@
             // button1
             // 
             button1.BackColor = Color.MediumSpringGreen;
-            button1.Location = new Point(41, 179);
+            button1.Location = new Point(41, 173);
             button1.Name = "button1";
             button1.Size = new Size(223, 31);
             button1.TabIndex = 2;
